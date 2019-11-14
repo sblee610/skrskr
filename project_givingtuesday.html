@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Skr Skr Giving Tuesday</title>
+    <style>
+      body {
+        font-family:'Arimo';
+        margin : 0;
+        overflow-style: none;
+      }
+
+      ::-webkit-scrollbar {
+        display:none;
+      }
+
+      .workContain {
+        scroll-snap-type: y mandatory;
+        overflow: auto;
+        width : 100vw;
+        height : 100vh;
+      }
+
+      .WorksIntro {
+        scroll-snap-align : start;
+        width : 100%;
+        height : 100%;
+        background: url(img/project_givingtuesday.png) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+
+      .WorksDescription {
+        scroll-snap-align : start;
+        padding : 5%;
+        position : relative;
+
+      }
+
+      .WorksDescription img {
+        display : block;
+        margin : auto;
+      }
+
+
+
+      .WorksDescription h3 {
+        position : absolute;
+        top : 15vh;
+        margin : 0;
+        font-weight: normal;
+      }
+
+      .WorksDescription h1 {
+        position : absolute;
+        top : 60vh;
+        right : 5vw;
+        margin : 0;
+        font-weight: normal;
+        width : 30%;
+        font-size : 2.5em;
+      }
+
+      .WorksDescription p {
+        width:40%;
+        font-size : 1.5em;
+      }
+
+      .WorksDescription2 {
+        scroll-snap-align : start;
+        position : relative;
+      }
+
+      #scrollicon_b {
+        position : absolute;
+        display : flex;
+        bottom : 50px;
+        height : 26px;
+        width : 70px;
+        margin-left:-35px;
+        font-size: 15px;
+        color:black;
+        border: 1.5px black solid;
+        left: 50%;
+        border-radius: 13px;
+        align-items:center;
+        justify-content:center;
+        text-decoration : none;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="workContain">
+      <div class="WorksIntro">
+      </div>
+      <div class="WorksDescription">
+        <img src="img/projectD_givingtuesday.png">
+        <h3 id="serviceS">ADVERTISING &<br>MARKETING</h3>
+        <h1>Movement to create an international day of charitable giving.</h1>
+        <p>1<br>ABOUT GIVING TUESDAY<br>#Danokgiving is a solidarity campaign within the GivingTuesday movement in the Basque Country. Their goal is for no one to start 2019 without toys or food. We collaborated with them to promote the campaign among the youth.<br>2<br>CONCEPT & EXECUTION<br>We made an interactive, animated video for promotion to spread their values: charity and giving.</p>
+      </div>
+      <div class="WorksDescription2"><a href="works.html" id="scrollicon_b">BACK</a></div>
+    </div>
+  </body>
+</html>
