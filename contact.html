@@ -104,6 +104,7 @@
 
     #contact {
       background-color: #E4E4E4;
+      z-index: -2;
     }
 
     #scrollicon_b {
@@ -167,17 +168,53 @@
     /* Slideshow container */
     .slideshow-container {
       margin:0;
-      max-width: 40vw;
+      width: 100vw;
+      height: 100vh;
       position: absolute;
-      right: 10%;
-      bottom : 45vh;
-      text-align: right;
+      z-index:-1;
     }
 
     /* Hide the images by default */
     .mySlides {
       display: none;
+      width: 100vw;
+      height: 100vh;
+    }
 
+    #shanghai {
+      background: url(firstbackground.png) no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      opacity: 0.5;
+    }
+
+    #seattle {
+      background: url(Seattle_Skyline.jpeg) no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      opacity: 0.5;
+    }
+
+    #bilbao {
+      background: url(Bilbao_Guggenheim.jpg) no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      opacity: 0.5;
+    }
+
+    #seoul {
+      background: url(Seoul_Skyeline.jpg) no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      opacity: 0.5;
     }
 
     .active {
@@ -204,13 +241,30 @@
       animation-duration: 1.5s;
     }
 
+    .fade1{
+      -webkit-animation-name: fade1;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade1;
+      animation-duration: 1.5s;
+    }
+
     @-webkit-keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
+      from {opacity: .2}
+      to {opacity: .5}
     }
 
     @keyframes fade {
-      from {opacity: .4}
+      from {opacity: .2}
+      to {opacity: .5}
+    }
+
+    @-webkit-keyframes fade1 {
+      from {opacity: .2}
+      to {opacity: 1}
+    }
+
+    @keyframes fade1 {
+      from {opacity: .2}
       to {opacity: 1}
     }
 
@@ -227,7 +281,6 @@
         <li><a class="scroll" href="index.html">中</a></li>
       </ul>
     </div>
-      <div class="con" id="contact">
 
           <svg id="backimg" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1047.9 674.06">
               <defs>
@@ -255,22 +308,22 @@
           <div class="contactInfo">
             <h1>Office Locations</h1>
 
-            <div class="myInfos fade">
+            <div class="myInfos fade1">
               <div class="officeLo">Shanghai</div>
               <div class="text">328 Tian Tong Lu Shanghai 200080, China</div>
             </div>
 
-            <div class="myInfos fade">
+            <div class="myInfos fade1">
               <div class="officeLo">Seattle</div>
               <div class="text">220 2nd Ave S, Seattle, WA, 98104, USA</div>
             </div>
 
-            <div class="myInfos fade">
+            <div class="myInfos fade1">
               <div class="officeLo">Bilbao</div>
               <div class="text">C Uribitarte 6, Bilbao, Bizkaia, 48001, Spain</div>
             </div>
 
-            <div class="myInfos fade">
+            <div class="myInfos fade1">
               <div class="officeLo">Seoul</div>
               <div class="text">684, Tongil-ro, Eunpyeong-gu, Seoul, 03371, Rep.Korea </br> 상상청 2층 203호 MTA Seoul Lab</div>
             </div>
@@ -280,28 +333,23 @@
           <p class="emailAdd">General enquires</br>
           skrskr@funcompany.org</p>
 
-          <div class="backRed fade">
-          </div>
+
           <!-- Slideshow container -->
 
           <div class="slideshow-container">
 
 
             <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <img src="shanghai.png" style="width:100%">
+            <div class="mySlides fade" id="shanghai">
             </div>
 
-            <div class="mySlides fade">
-              <img src="seattle.png" style="width:100%">
+            <div class="mySlides fade" id="seattle">
             </div>
 
-            <div class="mySlides fade">
-              <img src="bilbao.png" style="width:100%">
+            <div class="mySlides fade" id="bilbao">
             </div>
 
-            <div class="mySlides fade">
-              <img src="seoul.png" style="width:100%">
+            <div class="mySlides fade" id="seoul">
             </div>
           </div>
 
@@ -316,7 +364,7 @@
             <li><a href="">Behance</a></li>
             <li><a href="">Linkedin</a></li>
           </ul>
-      </div>
+
       <script type="text/javascript">
         var slideIndex = 1;
         showSlides(slideIndex);
